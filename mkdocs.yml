@@ -1,0 +1,4 @@
+site_name: Linx Blog
+site_url: https://blog.linxesp.com
+theme:
+    name: material
