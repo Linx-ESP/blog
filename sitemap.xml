@@ -4,4 +4,20 @@
          <loc>https://blog.linxesp.com/</loc>
          <lastmod>2024-10-29</lastmod>
     </url>
+    <url>
+         <loc>https://blog.linxesp.com/2024/10/esto-es-una-prueba/</loc>
+         <lastmod>2024-10-29</lastmod>
+    </url>
+    <url>
+         <loc>https://blog.linxesp.com/archive/2024/</loc>
+         <lastmod>2024-10-29</lastmod>
+    </url>
+    <url>
+         <loc>https://blog.linxesp.com/category/selfhosted/</loc>
+         <lastmod>2024-10-29</lastmod>
+    </url>
+    <url>
+         <loc>https://blog.linxesp.com/tags/</loc>
+         <lastmod>2024-10-29</lastmod>
+    </url>
 </urlset>
