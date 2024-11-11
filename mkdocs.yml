@@ -2,3 +2,56 @@ site_name: Linx Blog
 site_url: https://blog.linxesp.com
 theme:
     name: material
+    font:
+        text: "Roboto" # Defaut Roboto
+        code: "JetBrains Mono"
+    language: es
+    logo: /assets/imagenes/linxtransparenteq100.webp
+    favicon: /assets/imagenes/linxtransparenteq100.webp
+    features:
+        - search.suggest
+        - search.highlight
+    icon:
+        tag:
+            cloudflare: fontawesome/brands/cloudflare
+            wireguard: simple/wireguard
+            tailscale: simple/tailscale
+
+plugins:
+    - search:
+          enabled: true
+    #    - privacy
+    #        enabled: true
+    #        concurrency: 6
+    - rss:
+          enabled: true
+          date_from_meta:
+              as_creation: date
+          categories:
+              - categories
+              - tags
+          match_path: posts/.^
+
+    - blog:
+          enabled: true
+          blog_dir: .
+          archive: true
+          # blog_toc: false
+          post_date_format: long
+          post_url_date_format: yyyy/MM
+          # post_url_format: "{date}/{slug}"
+          post_readtime: true
+          authors: true
+          authors_file: .authors.yml
+          draft: true
+          draft_if_future_date: true
+    - tags:
+          enabled: true
+          tags: true
+          tags_file: tags.md
+
+extra:
+    tags:
+        Cloudflare: cloudflare
+        WireGuard: wireguard
+        Tailscale: tailscale
