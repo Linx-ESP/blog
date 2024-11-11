@@ -30,7 +30,7 @@ theme:
         code: "JetBrains Mono"
     language: es
     logo: /assets/imagenes/linxtransparenteq100.webp
-    favicon: /assets/imagenes/linxtransparenteq100.webp
+    favicon: /assets/imagenes/Simplesombratransparente (64px).png
     features:
         - search.suggest
         - search.highlight
