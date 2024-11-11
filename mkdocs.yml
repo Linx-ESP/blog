@@ -1,6 +1,29 @@
 site_name: Linx Blog
 site_url: https://blog.linxesp.com
+repo_url: https://github.com/Linx-ESP/blog
+repo_name: Linx-ESP/blog
 theme:
+    palette:
+        # Palette toggle for automatic mode
+        - media: "(prefers-color-scheme)"
+          toggle:
+              icon: material/brightness-auto
+              name: Cambiar a modo claro
+
+        # Palette toggle for light mode
+        - media: "(prefers-color-scheme: light)"
+          scheme: default
+          toggle:
+              icon: material/brightness-7
+              name: Cambiar a modo oscuro
+
+        # Palette toggle for dark mode
+        - media: "(prefers-color-scheme: dark)"
+          scheme: slate
+          toggle:
+              icon: material/brightness-4
+              name: Usar el modo del sistema
+
     name: material
     font:
         text: "Roboto" # Defaut Roboto
@@ -11,18 +34,27 @@ theme:
     features:
         - search.suggest
         - search.highlight
+        - content.tabs.link
     icon:
+        repo: fontawesome/brands/github
+        edit: material/pencil
+        view: material/eye
         tag:
             cloudflare: fontawesome/brands/cloudflare
             wireguard: simple/wireguard
             tailscale: simple/tailscale
 
+markdown_extensions:
+    - pymdownx.tabbed:
+          alternate_style: true
+    - attr_list
+    - md_in_html
+    - pymdownx.superfences
+
 plugins:
     - search:
-          enabled: true
-    #    - privacy
-    #        enabled: true
-    #        concurrency: 6
+          lang: es
+
     - rss:
           enabled: true
           date_from_meta:
@@ -33,25 +65,32 @@ plugins:
           match_path: posts/.^
 
     - blog:
-          enabled: true
           blog_dir: .
+          #          pagination_per_page: 1
+          enabled: true
           archive: true
-          # blog_toc: false
+          blog_toc: true
           post_date_format: long
           post_url_date_format: yyyy/MM
           # post_url_format: "{date}/{slug}"
           post_readtime: true
           authors: true
           authors_file: .authors.yml
-          draft: true
+          draft: false
+          draft_on_serve: true
           draft_if_future_date: true
     - tags:
           enabled: true
           tags: true
           tags_file: tags.md
+    - git-revision-date-localized:
+          enable_creation_date: true
 
 extra:
     tags:
         Cloudflare: cloudflare
         WireGuard: wireguard
         Tailscale: tailscale
+    social:
+        - icon: fontawesome/brands/github
+          link: https://github.com/Linx-ESP
