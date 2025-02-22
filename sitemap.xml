@@ -2,22 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://blog.linxesp.com/</loc>
-         <lastmod>2025-02-14</lastmod>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://blog.linxesp.com/2025/02/logitech-g29/</loc>
+         <lastmod>2025-02-22</lastmod>
     </url>
     <url>
          <loc>https://blog.linxesp.com/2024/11/Playnite/</loc>
-         <lastmod>2025-02-14</lastmod>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://blog.linxesp.com/archive/2025/</loc>
+         <lastmod>2025-02-22</lastmod>
     </url>
     <url>
          <loc>https://blog.linxesp.com/archive/2024/</loc>
-         <lastmod>2025-02-14</lastmod>
+         <lastmod>2025-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://blog.linxesp.com/category/simracing/</loc>
+         <lastmod>2025-02-22</lastmod>
     </url>
     <url>
          <loc>https://blog.linxesp.com/category/gaming/</loc>
-         <lastmod>2025-02-14</lastmod>
+         <lastmod>2025-02-22</lastmod>
     </url>
     <url>
          <loc>https://blog.linxesp.com/tags/</loc>
-         <lastmod>2025-02-14</lastmod>
+         <lastmod>2025-02-22</lastmod>
     </url>
 </urlset>
