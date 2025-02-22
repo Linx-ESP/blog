@@ -1,5 +1,7 @@
 ---
-date: 2024-11-11
+date: 
+    created: 2024-11-11
+    updated: 2024-12-13
 authors: 
     - Linx
 categories:
@@ -24,7 +26,7 @@ Cuenta también chorrocientos plugins para añadir bibliotecas, información, im
     - Se queda corto en gestionar la instalación de juegos (SRM solo importa juegos ya instalados) y en plugins para funciones adicionales o metadatos
         - Por ejemplo, metadata de terceros, guardado de partidas.
     - [Decky Loader](https://decky.xyz/) todavía no ofrece una versión estable (o usable) para Windows.
-    - [Millenium](https://steambrew.app/) of    rece temas para Steam, si su sistema de plugins avanza probablemente sea mejor opción.
+    - [Millenium](https://steambrew.app/) ofrece temas para Steam, si su sistema de plugins avanza probablemente sea mejor opción.
 
 - Epic Games
     - [Legendary](https://github.com/derrod/legendary) es un launcher por cli compatible con partidas en la nube, overlay y más funciones.
@@ -38,7 +40,7 @@ Cuenta también chorrocientos plugins para añadir bibliotecas, información, im
     - Amazon Games a través de Heroic / [Nile](https://github.com/imLinguin/nile)
     - Humble Bundle para Humble Vault (no que lo use)
 
-- Emuladores (ROMs almacenadas en un NAS y gestionadas con [ROMM](https://github.com/rommapp/romm))
+- Emuladores (ROMs almacenadas en un NAS y gestionadas con [ROMM](https://romm.app/))
     - Algunos emuladores son parte de [RetroArch (Steam)](https://store.steampowered.com/app/1118310/RetroArch/)
     - Los emuladores no cuentan con almacenamiento de partidas o save states salvo RetroArch
     - No suele haber una tienda digital de la que extraer metadatos/imagenes
@@ -75,7 +77,7 @@ Esto incluye:
 - Gestión de instalación.
     - En plataformas online tienes disponibles los juegos no instalados. No es el caso de emuladores de consolas.
     - Mis juegos que no están "instalados" están almacenados en un NAS, pero para cualquier cosa que supere la 6ª/7ª generación de consolas no es viable jugar con los juegos en el NAS (con mejor red local o cachés sería más viable).
-    - Por suerte mi NAS cuenta con [ROMM](https://github.com/rommapp/romm) que gestiona los juegos del NAS y ofrece un plugin en Playnite para que se muestre como biblioteca de la que descargar que mantiene compatibilidad con la gestión de emuladores de Playnite.
+    - Por suerte mi NAS cuenta con [ROMM](https://romm.app/) que gestiona los juegos del NAS y ofrece un plugin en Playnite para que se muestre como biblioteca de la que descargar que mantiene compatibilidad con la gestión de emuladores de Playnite.
         - Una opción alternativa es el plugin [EmuLibrary](https://github.com/psychonic/Playnite-EmuLibrary) que no requiere más que una carpeta externa, sin instalación de programas en el NAS.
 
 - Integración con emuladores
@@ -150,7 +152,7 @@ Salvo Xbox, querrás marcar la opción de importar juegos no instalados para pod
 
 - Amazon Games: marcar "Iniciar directamente sin el cliente oficial"
 - Battle.net, EA, Ubisoft requieren el launcher oficial instalado.
-- GoG detecta juegos instalados de manera externa a Playnite sin necesidad de GOG Galaxy
+- GOG OSS usa GOGDL y Comet para obtener juegos desde la cuenta, sincronizar partidas y más.  
 - Xbox, desmarcar "Importar juegos no instalados" salvo que quieras manualmente quitar todos los juegos de Game Pass **que hayas jugado al menos una vez** 
 - Steam incluye la opción de importar metadatos 
 - Minecraft: Usar MultiMC/Poly/Prism y [Prism Launcher](https://prismlauncher.org/) en vez del oficial

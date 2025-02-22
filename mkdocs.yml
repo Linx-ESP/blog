@@ -13,20 +13,23 @@ theme:
         # Palette toggle for light mode
         - media: "(prefers-color-scheme: light)"
           scheme: default
+          accent: ocean-coral
           toggle:
               icon: material/brightness-7
               name: Cambiar a modo oscuro
 
         # Palette toggle for dark mode
         - media: "(prefers-color-scheme: dark)"
-          scheme: slate
+          scheme: material-ocean
+          primary: ocean-coral
+          accent: ocean-coral
           toggle:
               icon: material/brightness-4
               name: Usar el modo del sistema
 
     name: material
     font:
-        text: "Roboto" # Defaut Roboto
+        text: "system-ui" # Defaut Roboto
         code: "JetBrains Mono"
     language: es
     logo: /assets/imagenes/linxtransparenteq100.webp
@@ -43,7 +46,8 @@ theme:
             cloudflare: fontawesome/brands/cloudflare
             wireguard: simple/wireguard
             tailscale: simple/tailscale
-
+extra_css:
+    - stylesheets/extra.css
 markdown_extensions:
     - pymdownx.tabbed:
           alternate_style: true
